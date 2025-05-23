@@ -1,0 +1,101 @@
+.weatherData {
+  width: 650px;
+  margin-top: 1% !important;
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.currentTemp {
+  font-size: 4em;
+  font-weight: 400;
+}
+
+.currentTempIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.currentCity {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.currentDay,
+.currentDesc {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.weatherData,
+.currentCity,
+.currentDay,
+.currentDesc {
+  padding-left: 12px;
+}
+
+.celsius {
+  font-size: 0.4em;
+  margin-top: 12px;
+}
+
+/* ========== Media Queries ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .weatherData {
+    width: 90%;
+  }
+
+  .currentTemp {
+    font-size: 3em;
+  }
+
+  .currentTempIcon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .weatherData {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .currentTemp {
+    font-size: 2.5em;
+  }
+
+  .currentTempIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .currentCity {
+    font-size: 1.3em;
+  }
+
+  .currentDay,
+  .currentDesc {
+    font-size: 0.95em;
+  }
+
+  .celsius {
+    font-size: 0.5em;
+  }
+}

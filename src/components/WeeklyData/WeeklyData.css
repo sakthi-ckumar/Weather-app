@@ -1,0 +1,56 @@
+td {
+  text-align: center;
+  padding-bottom: 0 !important;
+}
+
+.weeklyData {
+  padding: 0 !important;
+}
+
+.rowWeeklyData {
+  padding-top: 24px !important;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.tablee {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========== Media Queries ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .rowWeeklyData {
+    width: 90%;
+  }
+
+  .tablee {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .rowWeeklyData {
+    width: 100%;
+    padding: 16px 10px 0 10px !important;
+  }
+
+  .tablee {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  td {
+    font-size: 0.9rem;
+    padding: 6px 4px !important;
+  }
+}

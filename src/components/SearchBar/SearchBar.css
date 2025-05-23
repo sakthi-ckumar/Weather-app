@@ -1,0 +1,37 @@
+.searchBar-container {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.searchBar {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+/* ========== Media Queries ========== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .searchBar-container {
+    width: 90%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .searchBar-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .searchBar {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .searchBar input,
+  .searchBar button {
+    width: 100%;
+  }
+}
